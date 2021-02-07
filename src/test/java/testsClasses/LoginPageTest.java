@@ -11,7 +11,7 @@ import testSteps.LoginPageSteps;
 @RunWith(SerenityRunner.class)
 public class LoginPageTest {
 
-    @Managed()
+    @Managed(uniqueSession = true)
     WebDriver browser;
 
     @Steps
